@@ -1,0 +1,12 @@
+<data>
+    <record id="calendar_appointment_type_online_url_form" model="ir.ui.view">
+        <field name="name">calendar.appointment.type.form.url</field>
+        <field name="model">calendar.appointment.type</field>
+        <field name="inherit_id" ref="website_calendar.calendar_appointment_type_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='employee_ids']/tree" position="inside">
+                <field name="online_appointment_url" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+</data>

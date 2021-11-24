@@ -1,0 +1,12 @@
+<data>
+    <record id="online_appointment_url_employee_form" model="ir.ui.view">
+        <field name="name">hr.employee.form.online.appointment</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='coach_id']" position="after">
+              <field name="online_appointment_url"/>
+            </xpath>
+        </field>
+    </record>
+</data>

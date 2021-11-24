@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_online_appointment_locations_online_appointment_locations,online_appointment_locations.online_appointment_locations,model_online_appointment_locations_online_appointment_locations,base.group_user,1,1,1,1
