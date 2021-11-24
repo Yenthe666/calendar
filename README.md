@@ -9,4 +9,6 @@ This allows the "website_calendar" module to be a little more future-proof by al
 ![image](https://user-images.githubusercontent.com/6352350/143216117-35ad3897-a447-439e-a6ce-2ee0151c9297.png)
 
 When the employee has an "Online appointment URL" set we will insert this as the location into the e-mail sent to the customer.<br/>
-If no URL is set on the employee we will fallback to the default "Location" set on the online appointment type.
+If no URL is set on the employee we will fallback to the default "Location" set on the online appointment type.<br/>
+
+**Note:** this module depends on "website_calendar" which is an enterprise app. Make sure to also at least be on the commit https://github.com/odoo/enterprise/commit/fcb8139af0f032b56e79426744b554f4cc5766e1 in which we introduced a change to allow overriding this.
