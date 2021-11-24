@@ -12,9 +12,6 @@ class CalendarResponsible(WebsiteCalendar):
         result = super(CalendarResponsible, self)._prepare_calendar_values(
             appointment_type, date_start, date_end, description, name, employee, partner
         )
-        print('result: ' + str(result))
         if employee.online_appointment_url:
             result['location'] = employee.online_appointment_url
-        print('result2: ' + str(result))
-        print('employee: ' + str(employee))
         return result
